@@ -2988,7 +2988,7 @@ section {
   margin-bottom: 30px;
 }
 
-.footer .footer-content .footer-info h3 {
+.footer .footer-content .footer-info h1 {
   font-size: 28px;
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
@@ -2997,7 +2997,7 @@ section {
   text-transform: uppercase;
 }
 
-.footer .footer-content .footer-info h3 span {
+.footer .footer-content .footer-info h1 span {
   color: var(--color-primary);
 }
 
@@ -3078,4 +3078,19 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+	.footer .footer-content .footer-info p {
+	  font-size: 1.0rem;
+	  line-height: 24px;
+	  margin-bottom: 0;
+	  font-family: var(--font-primary);
+	  color: #fff;
+	}
+	.footer .footer-content .footer-links {
+	  margin-bottom: 30px;
+	  width:50%;
+	}
+	    
 }
