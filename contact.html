@@ -55,12 +55,12 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="dropdown">
-          	<a href="#"><span class="kfont">회사소개</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<a href="about.html" class="active"><span class="kfont">회사소개</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul class="kfont">
-              <li><a href="#">CEO 인사말</a></li>
-              <li><a href="#">찾아 오시는길</a></li>
+              <li><a href="about.html">CEO 인사말</a></li>
+              <li><a href="Contact.html">찾아 오시는길</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -95,8 +95,8 @@
                <li><a href="#">FAQ</a></li>
             </ul>
           </li>
-          <li><a href="blog.html"><span class="kfont">회원가입</span></a></li>
-          <li><a href="contact.html"><span class="kfont">로그인</span></a></li>
+          <li><a href="Register.html"><span class="kfont">회원가입</span></a></li>
+          <li><a href="Login.html"><span class="kfont">로그인</span></a></li>
           <li><a href="index2.html"><span>English</span></a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -104,16 +104,18 @@
     </div>
   </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
+
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/contact-header.jpg'); background-position:center;">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Contact</h2>
+        <h2>찾아 오시는길</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Contact</li>
+          <li>Company Introduction</li>
         </ol>
 
       </div>
@@ -127,7 +129,7 @@
           <div class="col-lg-6">
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
-              <h3>Our Address</h3>
+              <h3>주소</h3>
               <p>A108 Adam Street, New York, NY 535022</p>
             </div>
           </div><!-- End Info Item -->
@@ -135,7 +137,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
+              <h3>이메일</h3>
               <p>contact@example.com</p>
             </div>
           </div><!-- End Info Item -->
@@ -143,7 +145,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
+              <h3>연락처</h3>
               <p>+1 5589 55488 55</p>
             </div>
           </div><!-- End Info Item -->
@@ -160,24 +162,24 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="이름" required>
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="이메일" required>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="제목" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="7" placeholder="내용" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" class="btn-primary3">메시지 전송</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -195,12 +197,11 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-md-4">
             <div class="footer-info">
-              <h3>UpConstruction</h3>
+              <h1>UNI Logistics</h1>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
+                41 D.Poblete Street B.F Homes Paranaque City<br><br>
                 <strong>Phone:</strong> +1 5589 55488 55<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
@@ -212,48 +213,28 @@
               </div>
             </div>
           </div><!-- End footer info column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+          
+          <div class="col-md-4 footer-links kfont">
+            <h4>운송 서비스</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">해상화물</a></li>
+              <li><a href="#">항공화물</a></li>
+              <li><a href="#">항공특송</a></li>
+              <li><a href="#">프로젝트화물</a></li>
+              <li><a href="#">특수화물</a></li>
             </ul>
           </div><!-- End footer links column-->
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+          <div class="col-md-4 footer-links kfont">
+            <h4>바로가기</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
-            <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">네트워크</a></li>
+              <li><a href="#">온라인서비스</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="Register.html">회원가입</a></li>
+              <li><a href="Login.html">로그인</a></li>
             </ul>
           </div><!-- End footer links column-->
 
@@ -264,14 +245,13 @@
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>UNI Logistics</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
