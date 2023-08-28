@@ -492,6 +492,7 @@ section {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    font-family: Noto Sans !important;
   }
 
   .navbar a,
@@ -507,6 +508,7 @@ section {
     white-space: nowrap;
     text-transform: uppercase;
     transition: 0.3s;
+    font-family: Noto Sans !important;
   }
 
   .navbar a i,
@@ -514,6 +516,7 @@ section {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
+    font-family: Noto Sans !important;
   }
 
   .navbar a:hover,
@@ -1853,7 +1856,7 @@ section {
 }
 .dropdown {
 	float:left;
-	width:33%;
+	width:100%;
 }
 .btn.btn-primary, .btn.btn-secondary {
     color: #FFFFFF;
