@@ -838,7 +838,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  'cursor: pointer;
   height: 100%;
   border: 0;
   border-bottom: 4px solid #e2e4e6;
@@ -873,6 +873,8 @@ section {
 
 .features .tab-content {
   margin-top: 30px;
+  float:left;
+  width:50%;
 }
 
 .features .tab-pane h3 {
@@ -1876,6 +1878,12 @@ section {
     width:95%;
 }
 
+.btn-primary3 {
+    color: #000!important;
+    background-color: #ffcc33!important;
+    border-color: #ffcc33!important;
+}
+
 .btn-primary:hover {
     color: #000;
     background-color: #ff5b5e;
@@ -1892,6 +1900,11 @@ section {
     color: #000;
     background-color: #fff;
     border-color: #666;
+}
+.btn-primary3:hover {
+    color: #fff!important;
+    background-color: #ff0000!important;
+    border-color: #ff0000!important;
 }
 
 .btn {
@@ -1911,7 +1924,7 @@ section {
   width: 100%;
   background: #fff;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-  padding: 30px;
+  padding: 10px;
   border-radius: 20px;
 }
 
@@ -2159,6 +2172,10 @@ section {
     vertical-align: middle;
     width:95%;
 	}
+	.features .tab-content {
+	  margin-top: 30px;
+	  width:100%;
+	}
 	    
 }
 .signin_link li:after {
@@ -2170,6 +2187,7 @@ section {
     height: 16px;
     background-color: #ddd;
 }
+.mb-3 { margin-bottom: 5px!important; }
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
