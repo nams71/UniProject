@@ -5,6 +5,14 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+ $(document).ready(function(){
+  var currentPosition = parseInt($(".quickmenu").css("top"));
+  $(window).scroll(function() {
+    var position = $(window).scrollTop(); 
+    $(".quickmenu").stop().animate({"top":position+currentPosition+"px"},1000);
+  });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
