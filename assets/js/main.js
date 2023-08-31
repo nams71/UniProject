@@ -5,6 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
  $(document).ready(function(){
   var currentPosition = parseInt($(".quickmenu").css("top"));
   $(window).scroll(function() {
