@@ -1,9 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>유니로지스틱스</title>
+  
+ 
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,6 +19,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -34,18 +41,77 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+  	.radio-buttons-container {
+		  display: flex;
+		  align-items: center;
+		  gap: 15px;
+		}
+		
+		.radio-button {
+		  display: inline-block;
+		  position: relative;
+		  cursor: pointer;
+		}
+		
+		.radio-button__input {
+		  position: absolute;
+		  opacity: 0;
+		  width: 0;
+		  height: 0;
+		}
+		
+		.radio-button__label {
+		  display: inline-block;
+		  padding-left: 25px;
+		  margin-bottom: 10px;
+		  position: relative;
+		  font-size: 0.9em;
+		  color: #333;
+		  cursor: pointer;
+		  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+		}
+		
+		.radio-button__custom {
+		  position: absolute;
+		  top: 50%;
+		  left: 0;
+		  transform: translateY(-50%);
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  border: 2px solid #555;
+		  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+		}
+		
+		.radio-button__input:checked + .radio-button__label .radio-button__custom {
+		  transform: translateY(-50%) scale(0.9);
+		  border: 5px solid #4c8bf5;
+		  color: #4c8bf5;
+		}
+		
+		.radio-button__input:checked + .radio-button__label {
+		  color: #4c8bf5;
+		}
+		
+		.radio-button__label:hover .radio-button__custom {
+		  transform: translateY(-50%) scale(1.2);
+		  border-color: #4c8bf5;
+		  box-shadow: 0 0 10px #4c8bf580;
+		}
+  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="assets/img/UNi_Classic_Logo_White.png" alt="">
+        <!--h1>UNI Logistics</h1-->
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -61,19 +127,19 @@
             </ul>
           </li>
           <li class="dropdown">
-          	<a href="servicedetails.html" class="active"><span class="kfont">운송서비스</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<a href="servicedetails.html"><span class="kfont">운송서비스</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul class="kfont">
               <li><a href="servicedetails.html">해상화물</a></li>
               <li><a href="servicedetails1.html">항공화물</a></li>
               <li><a href="servicedetails2.html">항공특송</a></li>
-              <li><a href="servicedetails3.html">프로젝트화물</a></li>
+              <li><a href="servicedetails3.html">프로젝트화물</a</li>
               <li><a href="servicedetails4.html">특수화물</a></li>
             </ul>
           </li>
           <li class="dropdown">
-          	<a href="#"><span class="kfont">네트워크</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<a href="global.html"><span class="kfont">네트워크</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul class="kfont">
-              <li><a href="#">국내 네트워크</a></li>
+              <li><a href="korea.html">국내 네트워크</a></li>
                <li><a href="global.html">글로벌 네트워크</a></li>
             </ul>
           </li>
@@ -85,7 +151,7 @@
             </ul>
           </li>
           <li class="dropdown">
-          	<a href="notice.html"><span class="kfont">고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<a href="notice.html" class="active"><span class="kfont">고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul class="kfont">
               <li><a href="notice.html">공지사항</a></li>
               <li><a href="eastmate.html">1:1 문의</a></li>
@@ -104,47 +170,169 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/specialcargo_bg.jpg');background-position:bottom;">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/services2.jpg');background-position:center;">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>특수화물</h2>
+        <h2>1:1 문의</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Special Cargo</li>
+          <li>One-on-One Inquiry</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Service Details Section ======= -->
-    <section id="service-details" class="service-details">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact" style="padding-top:20px;">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12" style="margin:0 auto;">
+            <div class="join_wrapper">
+            	
+            	<div id="ct100_Panel1">
+            		<form action="forms/contact.php" method="post" role="form" class="php-email-form" style="box-shadow:0 0 0;padding:0;border-radius:0;">
+            		
+            		
+            		<div class="col-lg-12">
+            			
+			          	<div class="container h-100">
+								    <div class="row d-flex justify-content-center align-items-center h-100">
+								      <div class="col-xl-12">
+								
+								        <div class="card" style="border: 0;">
+								          <div class="card-body">
+								
+								            <hr class="mx-n3" style="height:3px;background-color:#333333;">
+								            
+								            <div class="row align-items-center">
+								              <div class="col-md-3a ps-5">
+								              	
+								              	<p style="margin-bottom:0;">1:1 문의는 타인에게 내용이 공개되지 않으므로 더 자세한 답변을 받을 수 있습니다.</p>
 
-        <div class="row gy-4">
+								              </div>
+								            </div>
+								
+								            <hr class="mx-n3">
+								            
+								            <div class="row align-items-center">
+								              <div class="col-md-3 ps-5">
+								                <h6 class="mb-0"><span style="color:red;font-weight:600;">*</span>문의구분</h6>
+								              </div>
+								              
+								              <div class="col-md-9 pe-5">								              	
+								              	<div class="form_search_wrap" style="text-align:left;">
+											      			<label class="form_select" style="width: 265px; display: none;" id="lst_showCate">
+																		<select id="lst_selCate">
+																		</select>
+																	</label>
+																	<label class="form_select" style="width:265px;">
+																		<select id="SearchTarget">
+																			<option value="b_Title">해상화물</option>
+																			<option value="b_Contents">항공화물</option>
+																			<option value="b_Contents">항공특송</option>
+																			<option value="b_Contents">프로젝트화물</option>
+																			<option value="b_Contents">특수화물</option>
+																			<option value="b_Contents">기타문의</option>
+																			
+																		</select>
+																	</label>
+											      		</div>
+															</div>
+														</div>
+								
+								            <hr class="mx-n3">
+								            
+								            <div class="row align-items-center">
+								              <div class="col-md-3 ps-5">
+								                <h6 class="mb-0"><span style="color:red;font-weight:600;">*</span>제목</h6>
+								              </div>
+								              <div class="col-md-9 pe-5">
+								
+								                <input type="text" class="form-control form-control-lg" />
+								
+								              </div>
+								            </div>
+								            
+								            <hr class="mx-n3">
+								            
+								            <div class="row align-items-center">
+								              <div class="col-md-3 ps-5">
+								
+								                <h6 class="mb-0"><span style="color:red;font-weight:600;">*</span>이메일</h6>
+								
+								              </div>
+								              <div class="col-md-9 pe-5">
+								
+								                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+								
+								              </div>
+								            </div>
+								            
+								            <hr class="mx-n3">
+								            
+								            <div class="row align-items-center">
+								              <div class="col-md-3 ps-5">
+								
+								                <h6 class="mb-0"><span style="color:red;font-weight:600;">*</span>전화번호</h6>
+								
+								              </div>
+								              <div class="col-md-9 pe-5">
+								
+								                <input type="text" class="form-control form-control-lg" />
+								
+								              </div>
+								            </div>
+								            
+								            <hr class="mx-n3">
 
-          <div class="col-lg-4">
-            <div class="services-list">
-              <a href="servicedetails.html">해상화물</a>
-              <a href="servicedetails1.html">항공화물</a>
-              <a href="servicedetails2.html">항공특송</a>
-              <a href="servicedetails3.html">프로젝트화물</a>
-              <a href="servicedetails4.html" class="active">특수화물</a>
-            </div>
-            
-          </div>
-
-          <div class="col-lg-8">
-            <img src="assets/img/Bulldozer-on-Super-Rack.jpg" alt="" class="img-fluid services-img">
-            <h4 class="kfont" style="line-height:25pt;">유니로지스틱스는 특수 화물의 취급은 전통적인 컨테이너 운송과 다르다는 점을 잘 알고 있습니다.</h4>
-
-            <p>대형 및 고중량 화물의 운송에서 40년 이상의 경험과 최고의 글로벌 네트워크를 갖추고 있으므로, 귀사의 특수 화물을 전세계 어디든지 운송할 수 있습니다. 당사의 국제 특수 화물 전문가팀은 관련된 문제에 대한 깊이 있는 지식과 이해도를 갖추고 있어 전과정에 도움을 드릴 수 있습니다.</p>
-
-          </div>
-
-        </div>
+								            
+								            <div class="row align-items-center">
+								              <div class="col-md-3 ps-5">
+								
+								                <h6 class="mb-0">파일첨부</h6>
+								
+								              </div>
+								              <div class="col-md-9 pe-5">
+								
+								                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+								                <div class="small text-muted mt-2">최대 파일 용량은  50 MB 입니다.</div>
+								
+								              </div>
+								            </div>
+								
+								            <hr class="mx-n3">
+								            
+								            
+								            <div class="row align-items-center">
+								              <div class="col-md-3 ps-5">
+								                <h6 class="mb-0"><span style="color:red;font-weight:600;">*</span>문의내용</h6>
+								              </div>
+								              <div class="col-md-9 pe-5">
+                  							<textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>						
+								              </div>
+								            </div>
+								
+								            <hr class="mx-n3">
+								
+								          </div>
+								        </div>
+								
+								      </div>
+								    </div>
+								  </div>
+  
+			          </div><!-- End Contact Form -->
+								</form>
+								<div class="btn_wrapper my-3">
+									<div class="btn_wrapper">
+                		<a href="Register2.html"><button class="btn btn-primary3 py-3">문의접수</button></a>
+                	</div>
+								</div>
+            	</div>
+            </div>         
+          </div><!-- End Contact Form -->
 
       </div>
-    </section><!-- End Service Details Section -->
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -218,7 +406,7 @@
   </footer>
   <!-- End Footer -->
 
- <!-- ========QUICK MENU ============= -->
+  <!-- ========QUICK MENU ============= -->
 	<div>
 		
 		<div class="quickmenu">

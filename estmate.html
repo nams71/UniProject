@@ -1,9 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>유니로지스틱스</title>
+  
+ 
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,6 +19,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -39,13 +46,13 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="assets/img/UNi_Classic_Logo_White.png" alt="">
+        <!--h1>UNI Logistics</h1-->
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -61,19 +68,19 @@
             </ul>
           </li>
           <li class="dropdown">
-          	<a href="servicedetails.html" class="active"><span class="kfont">운송서비스</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<a href="servicedetails.html"><span class="kfont">운송서비스</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul class="kfont">
               <li><a href="servicedetails.html">해상화물</a></li>
               <li><a href="servicedetails1.html">항공화물</a></li>
               <li><a href="servicedetails2.html">항공특송</a></li>
-              <li><a href="servicedetails3.html">프로젝트화물</a></li>
+              <li><a href="servicedetails3.html">프로젝트화물</a</li>
               <li><a href="servicedetails4.html">특수화물</a></li>
             </ul>
           </li>
           <li class="dropdown">
-          	<a href="#"><span class="kfont">네트워크</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<a href="global.html"><span class="kfont">네트워크</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul class="kfont">
-              <li><a href="#">국내 네트워크</a></li>
+              <li><a href="korea.html">국내 네트워크</a></li>
                <li><a href="global.html">글로벌 네트워크</a></li>
             </ul>
           </li>
@@ -85,11 +92,11 @@
             </ul>
           </li>
           <li class="dropdown">
-          	<a href="notice.html"><span class="kfont">고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<a href="notice.html" class="active"><span class="kfont">고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul class="kfont">
               <li><a href="notice.html">공지사항</a></li>
               <li><a href="eastmate.html">1:1 문의</a></li>
-               <li><a href="faq.html">FAQ</a></li>
+               <li><a href="faq.htm">FAQ</a></li>
             </ul>
           </li>
           <li><a href="Register.html"><span class="kfont">회원가입</span></a></li>
@@ -104,47 +111,160 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/specialcargo_bg.jpg');background-position:bottom;">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/services2.jpg');background-position:center;">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>특수화물</h2>
+        <h2>공지사항</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Special Cargo</li>
+          <li>Notice</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Service Details Section ======= -->
-    <section id="service-details" class="service-details">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="services-list">
-              <a href="servicedetails.html">해상화물</a>
-              <a href="servicedetails1.html">항공화물</a>
-              <a href="servicedetails2.html">항공특송</a>
-              <a href="servicedetails3.html">프로젝트화물</a>
-              <a href="servicedetails4.html" class="active">특수화물</a>
-            </div>
+      		<div class="form_search_wrap mt40">
+      			<label class="form_select" style="width: 200px; display: none;" id="lst_showCate">
+							<select id="lst_selCate">
+							</select>
+						</label>
+						<label class="form_select">
+							<select id="SearchTarget">
+								<option value="b_Title">제목</option>
+								<option value="b_Contents">내용</option>0
+							</select>
+						</label>
+						<label class="form_search">
+							<input type="text" placeholder="검색어를 입력하세요" id="SearchValue">
+			        <a href="#none" class="btn_search" id="SearchButton"></a>
+						</label>
+      		</div>
+      		<div class="clearfix" style="margin-top:20px;"></div>
+          
+          <div class="col-lg-6" style="margin:0 auto;width:100%;">
             
+            <form action="forms/contact.php" method="post" role="form">
+            <table class="table table-hover table-striped text-center kfont" style="border:1px solid #999;font-weight:400;border-right:0;border-left:0;">
+            	<thead>
+            		<tr>
+            			<th class="th1">번호</th>
+            			<th class="thtitle">제목</th>
+            			<th class="th2">작성자</th>
+            			<th class="th3">등록일자</th>
+            		</tr>
+            	</thead>
+            	<tbody>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            		<tr>
+            			<td>1</td>
+            			<td>Title_1</td>
+            			<td>test1</td>
+            			<td>2023-08-31 12:30:35</td>
+            		</tr>
+            	</tbody>
+            </table>
+            </form>
+            
+          </div><!-- End Contact Form -->
+          
+          <!-- ============= pagenation ============= -->
+          <div id="pdPaging" class="pagination">
+          	<nav aria-label="Page navigation example" class="text-center">
+						  <ul class="pagination">
+						    <li class="page-item">
+						      <a class="page-link" href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li class="page-item"><a class="page-link" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item"><a class="page-link" href="#">4</a></li>
+						    <li class="page-item"><a class="page-link" href="#">5</a></li>
+						    <li class="page-item"><a class="page-link" href="#">6</a></li>
+						    <li class="page-item"><a class="page-link" href="#">7</a></li>
+						    <li class="page-item"><a class="page-link" href="#">8</a></li>
+						    <li class="page-item"><a class="page-link" href="#">9</a></li>
+						    <li class="page-item"><a class="page-link" href="#">10</a></li>
+						    <li class="page-item">
+						      <a class="page-link" href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
           </div>
-
-          <div class="col-lg-8">
-            <img src="assets/img/Bulldozer-on-Super-Rack.jpg" alt="" class="img-fluid services-img">
-            <h4 class="kfont" style="line-height:25pt;">유니로지스틱스는 특수 화물의 취급은 전통적인 컨테이너 운송과 다르다는 점을 잘 알고 있습니다.</h4>
-
-            <p>대형 및 고중량 화물의 운송에서 40년 이상의 경험과 최고의 글로벌 네트워크를 갖추고 있으므로, 귀사의 특수 화물을 전세계 어디든지 운송할 수 있습니다. 당사의 국제 특수 화물 전문가팀은 관련된 문제에 대한 깊이 있는 지식과 이해도를 갖추고 있어 전과정에 도움을 드릴 수 있습니다.</p>
-
-          </div>
-
-        </div>
 
       </div>
-    </section><!-- End Service Details Section -->
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -218,7 +338,7 @@
   </footer>
   <!-- End Footer -->
 
- <!-- ========QUICK MENU ============= -->
+  <!-- ========QUICK MENU ============= -->
 	<div>
 		
 		<div class="quickmenu">
@@ -236,7 +356,7 @@
 					<div class="qdiv">
 						<img src="assets/img/estmate.png">
 					</div>
-					<span class="label kfont">1:1문의</span>
+					<span class="label kfont">견적문의</span>
 					</a>
 				</li>
 			</ul>
