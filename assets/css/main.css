@@ -2181,6 +2181,18 @@ nav.text-center {
 .table>:not(caption)>*>* {
 	padding: 0.8rem 0.8rem;
 }
+.table th {
+	padding:10px 10px;
+}
+.table .th1 {
+	width:100px;
+}
+.table .th2 {
+	width: 120px;
+}
+.table .th3 {
+	width: 180px;
+}
 
 @media (max-width: 767px) {
 	ol { 
@@ -2319,9 +2331,29 @@ nav.text-center {
 	.quickmenu {
   	display: none;
   }
-   .breadcrumbs h2 {
+ .breadcrumbs h2 {
   	font-size:2.0rem;
   }
+  
+  .table {
+  	border-top:2px solid #333;
+  }
+  .table th {
+  	padding:5px 3px;
+  	font-size:0.75em;
+  	
+  }
+  .table .thtitle {
+  	min-width:180px;
+  }
+	.table td {
+		font-size:0.715em;
+		padding:5px 3px;
+	}
+	.pagination {
+		--bs-pagination-padding-x: 0.65rem;
+		--bs-pagination-font-size: 0.65rem;
+	}
 	    
 }
 .signin_link li:after {
@@ -2334,6 +2366,58 @@ nav.text-center {
     background-color: #ddd;
 }
 .mb-3 { margin-bottom: 5px!important; }
+
+@media (max-width: 1023px) {
+	.mt40 {
+	    margin-top: 20px;
+		}
+	.form_search_wrap .form_select {
+	    width: 25%;
+		}
+	.form_select {
+	    display: inline-block;
+	    vertical-align: middle;
+	    overflow: hidden;
+	    box-sizing: border-box;
+	    position: relative;
+	    border: 1px solid #ccc;
+	    width: 100%;
+		}
+	.form_search_wrap .form_select select {
+	    height: 31px;
+	    font-size: 0.9em;
+		}
+	.form_search input {
+	    height: 31px;
+	    width: 100%;
+	    font-size: 0.8em;
+		}
+	.form_select select {
+	    width: 100%;
+	    border: 0;
+	    height: 38px;
+	    line-height: 33px;
+	    font-size: 1em;
+	    color: #999;
+	    position: relative;
+	    z-index: 1;
+	    text-indent: 9px;
+		}
+	.form_search_wrap .form_search {
+	    width: 50%;
+		}
+	.form_search {
+	    height: 33px;
+	    display: block;
+	    padding-right: 42px;
+		}
+	.form_search .btn_search {
+	    background: url(../img/icon_search.png) 50% 50% no-repeat;
+	    background-size: 18px;
+	    width: 31px;
+	    height: 31px;
+		}
+}
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
