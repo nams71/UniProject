@@ -2091,6 +2091,96 @@ section {
 		padding-left:20px;
 		text-align:left;
 	}
+	#pbPaging {
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    left: 0;
+}
+nav.text-center {
+    display: inline-block;
+}
+.pagination {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+.mt40 {
+	margin-top: 40px;
+}
+.form_search_wrap {
+	text-align:right;
+}
+.form_select {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.form_search_wrap .form_select {
+    display: inline-block;
+    width: 120px;
+}
+.form_search_wrap .form_select select {
+    height: 41px;
+    color: #111;
+}
+.form_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form_select select {
+    width: 100%;
+    border: 0;
+    height: 48px;
+    line-height: 43px;
+    font-size: 1em;
+    color: #999;
+    position: relative;
+    z-index: 1;
+    text-indent: 9px;
+}
+.form_search_wrap .form_search {
+    display: inline-block;
+    width: 300px;
+}
+.form_search {
+    border: 1px solid #ccc;
+    height: 42px;
+    display: block;
+    vertical-align: middle;
+    position: relative;
+    padding-right: 42px;
+}
+.form_search input {
+    border: 0;
+    height: 40px;
+    width: 100%;
+    text-indent: 14px;
+    color: #292929;
+    font-size: 16px;
+}
+.form_search .btn_search {
+    background: url(../img/icon_search.png) 50% 50% no-repeat;
+    background-size: 21px;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color:#333;
+}
+
+
+.table>:not(caption)>*>* {
+	padding: 0.8rem 0.8rem;
+}
 
 @media (max-width: 767px) {
 	ol { 
@@ -2106,7 +2196,7 @@ section {
 	
 	.join_wrapper .join_step ol li {
 	    line-height: 32px;
-	    font-size: 0.75em;
+	    font-size: 1.2rem;
 	    letter-spacing: -0.05em;
 	}
 	.join_wrapper .join_step ol li span {
