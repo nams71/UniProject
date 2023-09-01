@@ -2417,6 +2417,25 @@ nav.text-center {
 	    width: 31px;
 	    height: 31px;
 		}
+		.table {
+  	border-top:2px solid #333;
+  }
+  .table th {
+  	padding:5px 3px;
+  	font-size:0.75em;
+  	
+  }
+  .table .thtitle {
+  	min-width:180px;
+  }
+	.table td {
+		font-size:0.715em;
+		padding:5px 3px;
+	}
+	.pagination {
+		--bs-pagination-padding-x: 0.65rem;
+		--bs-pagination-font-size: 0.65rem;
+	}
 }
 
 /*--------------------------------------------------------------
