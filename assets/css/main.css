@@ -75,7 +75,11 @@
     text-align: center;
 }
 
-.kfont { font-family: Noto Sans !important; font-weight:600;}
+.kfont { 
+	font-family: 'Nanum Gothic', sans-serif;
+	'font-family: 'Noto Sans KR', sans-serif;
+	font-weight:600;
+	}
 
 .quickmenu {position:absolute;width:60px;top:46%;height:120px;right:15px;margin-top:300px;background:#fff;z-index:9999;background-color: #f8f8f8;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);overflow: hidden;border-radius: 4px;}
 .quickmenu ul {position:relative;float:left;width:100%;display:inline-block;*display:inline;border:1px solid #ddd;overflow:visible;padding-left:0;}
@@ -365,7 +369,7 @@ section {
     padding: 0 3px;
     font-family: var(--font-primary);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 800;
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     white-space: nowrap;
